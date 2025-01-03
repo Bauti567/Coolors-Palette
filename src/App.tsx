@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Palette from "./components/palette/Palette";
+import ColorInput from "./components/color-input/ColorInput";
 
 const generateRandomColor = (): string => {
   return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`;
@@ -32,6 +33,7 @@ const App = () => {
       <button onClick={generatePalette} style={{ margin: "20px", padding: "10px" }}>
         Generate Palette
       </button>
+      <ColorInput></ColorInput>
 
       {/* Componente Palette para mostrar la paleta de colores */}
       <Palette colors={palette} onColorClick={copyToClipboard} />
