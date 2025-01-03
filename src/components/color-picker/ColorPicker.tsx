@@ -1,5 +1,3 @@
-import { useContext } from "react";
-
 function ColorPicker() {
     
     return (
@@ -8,7 +6,7 @@ function ColorPicker() {
                 <input
                     aria-label="select a color"
                     className="absolute left-2 top-[6px]"
-                    //onChange={(value) => provider.setHexColor(value.target.value, true)}
+                   //onChange={(value) => provider.setHexColor(value.target.value, true)}
                     type="color"
                     //value={provider.hexColor}
                 >
