@@ -1,6 +1,7 @@
+import { useContext } from "react";
 
 function ColorPicker() {
-
+    
     return (
         <div className="flex flex-col items-center gap-2 md:flex-row">
             <label htmlFor="current-colors" className="relative">
